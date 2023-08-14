@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+    <title>JavaScript - Comparison Operators</title>
+</head>
+<body>
+    <h1>JavaScript</h1>
+    <h2>Comparison Operators</h2>
+    <!-- Comparison operators are used to determine whether the assignment operators indicate a true or a false value -->
+
+    <script>
+        //Equal to
+        console.log(2 == 2)
+        console.log(2 == 3)
+        console.log(null == undefined)
+
+        //Equal value and equal type
+        console.log(2 === "Hello")
+        console.log(null === undefined)
+
+        //Not equal
+        console.log(2 != 2)
+        console.log(2 != 3)
+
+        //Not equal value and not equal type
+        console.log(2 !== "2")
+
+        //Greater than
+        console.log(2 > 1)
+        console.log(2 > 3)
+
+        //Less than
+        console.log(2 < 1)
+        console.log(2 < 3)
+
+        //Greater than or equal to
+        console.log(2 >= 1)
+        console.log(2 >= 2)
+        console.log(2 >= 3)
+
+        //Less than or equal to
+        console.log(2 <= 1)
+        console.log(2 <= 2)
+        console.log(2 <= 3)
+
+        
+        //Comparing Different Data Types
+
+        //When comparing a string with a number, JavaScript will convert the string to a number when doing the comparison.
+        console.log(2 < 12) //true
+        console.log(2 < "12") //false
+        
+        //A non-numeric string converts to NaN which is always false.
+        console.log(2 < "John Wick") //false
+        console.log(2 > "John Wick") //false
+        console.log(2 == "John Wick") //false
+
+        //When comparing two strings, "2" will be greater than "12", because (alphabetically) 1 is less than 2.
+        console.log("2" < "12") //false
+        console.log("2" > "12") //true
+        console.log("2" == "12") //false
+
+        //An empty string converts to 0.
+        console.log("2" > "") //true
+    </script>
+</body>
+</html>
